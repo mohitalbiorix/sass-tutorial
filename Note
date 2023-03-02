@@ -1,0 +1,16 @@
+@mixin is used to group css code that has to be reused a no of times. Whereas the @extend is used in SASS to inherit(share) the properties from another css selector.
+@extend is most useful when the elements are almost same or identical. The main difference between the two is in their compiled CSS file.
+
+@ useful mixin 
+1. @include make-row();
+2. @mixin make-*-column();
+        ex. make-lg-column(2);
+3. @mixin size(width, height);
+4. @mixin square(args);
+5. @mixin panel-variant($border, $heading-text-color, $heading-bg-color, $heading-border);
+6. @mixin button-variant();
+7. @mixin gradient-*();
+        gradient-horizontal();
+        gradient-vertical();
+        gradient-horizontal-three-colors();
+        ex. gradient-horizontal($start-color, $end-color, $start-percent, $end-percent);

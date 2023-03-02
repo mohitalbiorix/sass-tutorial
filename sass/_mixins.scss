@@ -1,0 +1,19 @@
+@mixin commonCode {
+    color: $textColor;
+    &:hover {
+        color:red;
+        cursor: pointer;
+    }
+}
+
+@mixin headerCode($backgroundColor) {
+    width: 100% - 20%;
+    height: 50vh + 70vh - 20vh;
+    margin: 0 auto;
+    background-color: $backgroundColor;
+    color: $textColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
